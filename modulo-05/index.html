@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <a href="#" class="btn btn-primary">Ver projetos</a>
+    <input type="text" class="form-control">
+    <textarea class="form-control" rows="4" placeholder="Digite sua mensagem"></textarea>
+
+    <form class="needs-validation" novalidate>
+        <div class="mb-3">
+            <label for="email" class="form-label">E-mail</label>
+            <input type="email" class="form-control" id="email" required>
+            <div class="invalid-feedback">Informe um e-mail válido.</div>
+            <div class="valid-feedback">Ficou bom!</div>
+        </div>
+
+        <div class="mb-3">
+            <label for="motivo" class="form-label">Motivo</label>
+            <select class="form-select" id="motivo">
+                <option selected disabled value="">Escolha uma opção</option>
+                <option value="1">Opção 1</option>
+            </select>
+        </div>
+
+        <div class="form-check mb-3">
+            <input class="form-check-input" type="checkbox" id="aceite" required>
+            <label class="form-check-label" for="aceite">Aceito os termos</label>
+        </div>
+
+        <button class="btn btn-primary" type="submit">Enviar</button>
+    </form>
+</body>
+</html>
