@@ -1,0 +1,44 @@
+body {
+      font-family: "Rubik", sans-serif;
+      background-color: #313e51;
+      color: #fff;
+      min-height: 100vh;
+    }
+    .welcome-light { font-weight: 300; font-size: clamp(2rem, 4vw, 3.5rem); line-height: 1.1; }
+    .welcome-bold { font-weight: 500; font-size: clamp(2rem, 4vw, 3.5rem); line-height: 1.1; }
+    .hint { font-style: italic; font-size: .875rem; color: #abc1e1; }
+
+    /* Toggle de tema */
+    .theme-switch .form-check-input {
+      width: 2.25rem; height: 1.2rem; cursor: pointer;
+      background-color: #a729f5; border-color: #a729f5;
+      --bs-form-switch-bg: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='%23fff'/%3e%3c/svg%3e");
+    }
+    .theme-switch .form-check-input:checked { background-color: #a729f5; border-color: #a729f5; }
+    .theme-switch .form-check-input:focus { box-shadow: 0 0 0 .25rem rgba(167, 41, 245, .35); }
+    .theme-switch i { color: #abc1e1; font-size: .9rem; }
+
+    /* Opções */
+    .subject-btn {
+      background-color: #3b4d66;
+      border: 0;
+      border-radius: 1rem;
+      color: #fff;
+      font-weight: 500;
+      font-size: 1.1rem;
+      padding: .75rem;
+      box-shadow: 0 16px 40px rgba(49, 62, 81, .14);
+    }
+    .subject-btn:hover, .subject-btn:focus-visible { background-color: #44587a; color: #fff; }
+    .subject-btn:focus-visible { outline: 2px solid #a729f5; outline-offset: 2px; }
+    .icon-box {
+      width: 2.5rem; height: 2.5rem;
+      border-radius: .5rem;
+      display: inline-flex; align-items: center; justify-content: center;
+      font-size: 1.25rem;
+      flex-shrink: 0;
+    }
+    .icon-html { background: #fff1e9; color: #ff7e35; }
+    .icon-css { background: #e0fdef; color: #26d782; }
+    .icon-js { background: #ebf0ff; color: #306aff; font-weight: 700; font-size: .9rem; }
+    .icon-a11y { background: #f6e7ff; color: #a729f5; }
